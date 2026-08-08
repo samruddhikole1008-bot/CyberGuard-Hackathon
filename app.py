@@ -7,9 +7,13 @@ import math
 app = Flask(__name__, template_folder='.')
 
 
-# Serve CSS, JavaScript, and other files from the root folder
-@app.route('/<path:filename>')
-def serve_static(filename):
+@app.route('/static/css/<filename>')
+def serve_css(filename):
+    return send_from_directory('.', filename)
+
+
+@app.route('/static/js/<filename>')
+def serve_js(filename):
     return send_from_directory('.', filename)
 
 
