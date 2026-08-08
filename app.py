@@ -4,7 +4,7 @@ import re
 from collections import Counter
 import math
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 
 SUSPICIOUS_WORDS = {
     'login':1.0,'verify':1.2,'verification':1.2,'urgent':1.5,'account':.6,
