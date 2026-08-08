@@ -1,0 +1,7 @@
+url,label
+https://github.com,low-risk
+https://www.google.com,low-risk
+http://example.com/login,review
+http://secure-account-verification.example/login,high-risk
+https://bit.ly/verify-account,review
+http://bank-login-confirm.example/password,high-risk
